@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Каскадные таблицы стилей</title>
+<style type="text/css"> 
+body { text-align:center; background-color:white; color:red;}
+p {color:red}
+.note{color:green}
+div{
+	position:relative;
+	top: 0px; 
+	left: 0px; 
+	text-align:left;
+	background-color: rgb(122, 122, 122);
+	position: relative;
+	border-left: 1px solid red;
+	border-top: 1px solid red;
+	border-righ: 1px solid red;
+	}
+
+.width {width:800px;}
+
+.center {
+	text-align:center; 
+	height: 30px;
+}
+
+ </style> 
+
+</head>
+
+<body>
+
+	<div class="center">
+	Заголовок
+	</div>
+	
+	<div>
+
+				<div  style="position: relative; top: 0px; left: 0px;  width:150px;">
+				   Навигация
+				</div>	
+				<div style="position: relative; top: 0px; left: 0px;  width:150px;>
+				   Соденржание
+				</div>	
+
+	
+	</div>
+
+
+
+
+
+	<div class="center">
+	Подвал
+	</div>
+
+</body>
+</html>
+

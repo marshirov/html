@@ -1,0 +1,3 @@
+AddDefaultCharset utf-8
+SetEnv PYTHONIOENCODING utf-8
+Options +Indexes

@@ -1,0 +1,35 @@
+
+/* A simple style sheets to highlight typos and errors in W3C
+   specifications. Use it in addition to another style sheet. Useful
+   for:
+
+     1. Errata documents
+     2. Output of HTML diff programs that use <del> and <ins>
+     3. Specifications
+
+   In case (1) and (2), you could use it like this, e.g.:
+
+     <link rel="stylesheet" type="text/css"
+	   href="http://www.w3.org/StyleSheets/TR/base.css">
+     <link rel="alternate stylesheet" type="text/css"
+	   href="http://www.w3.org/StyleSheets/TR/W3C-errata.css">
+
+   In case (3), use it as an *alternative* style sheet. NOTE: in that
+   case you cannot include any deletions, since people without CSS
+   won't be able to see a "clean" version.
+
+     <link rel="stylesheet" type="text/css"
+	   href="http://www.w3.org/StyleSheets/TR/W3C-CR.css">
+     <link rel="alternate stylesheet" type="text/css" title="View changes"
+	   href="http://www.w3.org/StyleSheets/TR/W3C-errata.css">
+*/
+
+
+span.typo { color: black; background: #FF5 }
+span.error { color: black; background: #F95 }
+
+span.date { color: #900 }
+
+ins, .ins { color: #000; background: #CFC; text-decoration: underline }
+del, .del { color: #333; background: #FC9; text-decoration: line-through }
+

@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+new_branc or master
+=======
+githab__branch
+Обновленный githab__branch
+githab__branch
+файл
+git push -m "Изменение" -m "Описание"
+new_branc githab__branch
+>>>>>>> 69b9fc9a6c5c405a69c620dfa91e9487aca25e84

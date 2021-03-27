@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Каскадные таблицы стилей</title>
+<!-- Внешняя таблица стилей-->
+<link rel='stylesheet' type='text/css' href='main.css'>
+
+<!--Встроенная таблица стилей-->
+<!--
+<style type="text/css">
+#Правила: селектор (выбирает тэг) {блок объявлений (указывает свойства и значение)}#
+body {background-color: #666; color:}
+p {color:red}
+.note{color:green}
+#news{color:green}
+</style>
+-->
+</head>
+
+<body > 
+<!--внутренние стили-->
+<!--<body style="background-color:silver; color:red; background-image: url(1.png) ;  background-repeat:no-repeat;  background-position:  top center"> 
+Стиль будет назначен элементу body
+-->
+Стиль для body (еще не назначен)
+<p>Стиль для абзаца (из будущей  внешней или глобальной таблицы)</p>
+<p style="color:red; ">Встроенный стиль   для абзаца</p>
+<p style="font-size:1.5em; text-align: left; text-indent:2em; line-height:1.5em ">Еще один пример <br>встроенного стиля </p>
+
+<p>
+<font style="font-size: 1.5em; text-decoration: underline; letter-spacing:0.8em; word-spacing: 3em">Примеры возможностей стилей</font> 
+<br><font style="color:blue">возможностей стилей</font> 
+<font style="font-style:italic; background-color:gray; font-weight:bolder;">для</font> 
+<font style="font-weight:lighter;">для </font>
+<font style="background-color:green">представления</font>
+<font style="vertical-align:super">текста </font>
+<font style="background-color:white">представления</font>
+<font style="vertical-align:sub">текста</font> 
+абзаца
+</p>
+<p style="font-family: sans-serif">Семейство шрифтов font-family: sans-serif</p>	
+
+<p><img src="1.png" style="height: 60px">
+<br>Размеры изображения заданы внутренним стилем. Они не должны измениться после подключения таблиц
+</p>
+
+<p>Стиль для абзаца (из внешней или глобальной таблицы). Еще не подключен</p>
+
+<p><img src="1.png" >
+<br>Свойства элементы будут  заданы таблицей стилей
+</p>
+
+<p class="note">В таблице  назначен класс ".note"</p> 
+
+<p id="news">В таблице назначен идентификтор "#news".</p>
+
+<p>
+<br><a href="http://www.google.com">www.google.com</a>
+<br><a href="http://www.yandex.ru">www.yandex.ru</a>
+<br><a href="http://www.yahoo.com">www.yahoo.com</a>
+</p>
+
+
+
+<!--
+
+<table style="
+    vertical-align: top;
+	margin: 0;
+    height: 200px; 
+    background: green;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black;
+	width: 1024px
+">
+<tr>
+<td colspan="4">
+<table style="
+    text-align : center;
+	width : 100%;
+ ">
+ <tr> 
+  <td>
+  Примеры позиционирования и создания представлений  с использованием блоков и таблиц 
+  </td> 
+  </tr> 
+  </table>
+</td> 
+</tr>
+
+<tr>
+<td style="
+    width: 200px; 
+   	background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -1px; 
+  ">1Примеры позиционирования и создания представлений  с использованием блоков и таблиц 
+  </td> 
+   
+     
+   
+<td style="
+    width: 200px; 
+    background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 10px; 
+    left: -10px; 
+  ">2Примеры позиционирования и создания представлений  с использованием блоков и таблиц  
+  </td> 
+
+
+   <td style="
+    width: 200px; 
+    background-image: url(1.png);
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -11px; 
+  ">3Примеры позиционирования и создания представлений  с использованием блоков и таблиц  
+  </td> 
+   
+<td style="
+  width: 200px; 
+  background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -12px; 
+    border-radius: 18px;
+ ">
+
+<table  style="float: right;
+ ">
+
+<tr>
+ <td style="
+ border: solid 2px red; 
+ height: 150px;
+ padding: 3px;
+ margin-right: 10px;
+ vertical-align: top;
+  border-radius: 8px;
+ ">
+ <img src="1.png" style="height: 60px; float: right; " >
+  </td>
+</tr></table>  
+  
+  </td>   
+</tr>
+</table> 
+</table> 
+
+-->
+
+<!--_______________________________________________________________
+-->
+
+<!--
+  <div style="
+  vertical-align: top;
+    margin: 0;
+    height: 200px; 
+    background: green;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+	width: 1024px
+  ">
+  
+  <div style="
+    height: 30px; 
+    text-align: center 
+ ">
+  Примеры позиционирования и создания представлений  с использованием блоков и таблиц 
+  </div> 
+   
+     <div style="
+    width: 200px; 
+    background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -1px; 
+  ">1Примеры позиционирования и создания представлений  с использованием блоков и таблиц 
+  </div> 
+   
+     
+   
+   <div style="
+    width: 200px; 
+    background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 10px; 
+    left: -10px; 
+  ">2Примеры позиционирования и создания представлений  с использованием блоков и таблиц  
+  </div> 
+
+
+   <div style="
+    width: 200px; 
+    background-image: url(1.png);
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -11px; 
+  ">3Примеры позиционирования и создания представлений  с использованием блоков и таблиц  
+  </div> 
+   
+   <div style="
+  width: 200px; 
+  background: #fc0; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: 0px; 
+    left: -12px; 
+    border-radius: 18px; 
+ ">
+  
+ <div style="
+ border: solid 2px red; 
+ height: 150px;
+ padding: 3px;
+ margin-right: 10px;
+ float: right; 
+ vertical-align: top;
+ border-radius: 8px;
+ ">
+ <img src="1.png" style="height: 60px;
+ " >
+  </div>
+  </div>   
+  </div> 
+
+-->
+
+
+
+
+
+
+
+
+
+<!-- Структура страницы-->
+<div style="
+position: relative; 
+top: 20px; 
+left: 0px; 
+width: 1024px;
+border: solid 1px red; 
+">
+
+<div style="
+width: 1024px;
+high: 30;
+text-align:center;
+">
+Заголовок
+</div>
+
+
+<div style="
+	width: 1024px;
+	text-align:left;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+">
+			<div style="
+			 float: left; 
+			border-right: 1px solid red;
+			width: 150px ;
+			">
+               Навигация
+			</div>
+
+			<div style="
+			">
+			Содержание	
+			</div>
+</div>
+
+<div style="
+	width: 1024px;
+	text-align:left;
+">
+Подвал
+</div>
+</div>
+</body>
+</html>
+
+<!-- 
+Задание из раздела "Форматирование  ..." сделать с использование таблицы стилей
+Задание из раздела таблицы оформить с использованием таблицы стилей
+Сформировать меню  с ненумерованным списком где: расстояние между элементами примерно в 3 раза больше чем разрывы строк 
+Создать отдельную страницу , содержащую, блочные и таблицеообразные структуры и все стили разместить в внешнем файле
+Структуру страницы в дивах дополнить навигационной частью, расположенной под заголовком и дополнить частью с новостями, равположенной справа
+Создать навигацию с использованием меняющегося изображения на заднем фоне
+
+-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<p>JS </p>
+<script>alert("Оповещение  (из тела страницы)")</script>
+<p onclick = "alert('Был выполнен клик.(Событие). Cкрипт из тела страницы')">Событие.Из тела страницы. Кликнуть</p>
+
+
+<script src="../js/010_main.js"></script>
+
+<script src="../js/015_file.js"></script>
+
+<br>
+<script src="../js/020_function.js"></script>
+<input type="text" onchange="myVar = this.value" >
+<button id="id_button" onclick="doSomething()" value="ВызватьФункцию.Распеч.ГлобПеременную">123</button>
+<input type="buttom" onclick="doSomething()" value="ВызватьФункцию.Распеч.ГлобПеременную">
+
+<br>
+<script>/*window.addEventListener('mousemove', function(e){
+    console.log("Mouse was moved");
+    });
+    */</script>
+<script>/*window.addEventListener('mousemove', function(e){
+    console.log("X: " + e.offsetX, "Y: " + e.offsetY);
+    });
+    */</script>
+
+
+
+<script src="../js/040_timer.js"></script>
+<input type="text" onchange="key = this.value" >
+<input type="buttom" onclick="timer()"  value="ВызватьТаймер">
+
+</body>
+
+</html>
